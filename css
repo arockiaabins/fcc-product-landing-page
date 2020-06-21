@@ -1,0 +1,147 @@
+/*global styling*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Notable&family=PT+Serif&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.about, .places h1{
+	font-family: 'PT Serif', serif;
+}
+
+.logo > img{
+	max-height: 60px;
+	max-width: 90px;
+	width: 100%;
+	height: 100%;
+	border-radius: 40px;
+}
+
+header{
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*background-color: pink;*/
+}
+
+
+.logo-title{
+	display: flex;
+	justify-content: center;
+	/*background-color: green;*/
+	align-items: center;
+
+}
+
+.title{
+	font-family: 'Metal Mania', cursive, sans-serif;
+	color: #79d70f;
+	font-size: 30px;
+}
+
+nav{
+	text-transform: uppercase;
+	display: flex;
+	flex:1;
+	/*background-color: blue;*/
+	justify-content: space-around;
+	/*position: fixed;
+	right: 0;
+	top: 0;*/
+}
+
+
+nav a{
+	text-decoration: none;
+	/*background-color: lightblue;*/
+	padding: 10px;
+}
+
+nav i{
+	margin-right: 4px;
+}
+
+a:hover{
+	color: #ff7a59;
+  	border: #ff7a59 solid 1px;
+  	background:#127681;
+}
+
+@media screen and (max-width: 500px) {
+  header, nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about{
+	text-align: center;
+	padding: 20px;
+	/*background-color: pink;*/
+}
+
+@media screen and (max-width: 500px) {
+  #video {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.places{
+	padding: 20px;
+	text-align: justify;
+}
+
+.places h1{
+	text-align: center;
+	color: #aacfcf;
+}
+
+.places h2{
+	font-family: 'Lobster', cursive; 
+}
+
+.centered h1{
+	text-align: center;
+	color: black;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.card{
+	flex: 0 1 20%;
+	background-color: #d6efc7;
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px #900c3f;
+	text-align: center;
+	display: inline-block;
+}
+
+.contact{
+	text-align: center;
+	font-size: 30px;
+}
+
+#submit{
+	padding: 5px;
+	font-weight: bolder;
+}
+
+footer{
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	margin: 5px;
+}
